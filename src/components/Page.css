@@ -1,0 +1,186 @@
+.page {
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(270deg, #003366, #005f73, #0a9396, #94d2bd);
+  background-size: cover;
+  animation: dynamicGradient 12s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0f7fa;
+  transition: background 0.5s ease;
+}
+
+.page-image {
+  max-width: 160px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(100, 80, 220, 0.8);
+  margin-bottom: 2.5rem;
+  border: 3px solid rgba(123, 104, 238, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.page-image:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 18px 40px rgba(100, 80, 220, 1);
+}
+
+.loving-message {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  color: #e0e6ff;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(72, 60, 186, 0.8), rgba(123, 104, 238, 0.6));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 35px rgba(72, 60, 186, 0.7);
+  line-height: 1.9;
+  text-align: center;
+  text-shadow: 0 0 8px #7b68ee;
+  animation: fadeIn 2s ease forwards, pop 1.5s ease-out;
+}
+
+.loving-message:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(72, 60, 186, 0.9);
+}
+
+.page-image-alvin {
+  max-width: 320px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(255, 140, 0, 0.8);
+  margin-bottom: 2.5rem;
+  border: 3px solid rgba(255, 165, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.page-image-alvin:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 18px 40px rgba(255, 140, 0, 1);
+}
+
+.loving-message-alvin {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  color: #fff5e6;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.8), rgba(255, 165, 0, 0.6));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 35px rgba(255, 140, 0, 0.7);
+  line-height: 1.9;
+  text-align: center;
+  text-shadow: 0 0 8px #ff8c00;
+  animation: fadeIn 2s ease forwards, pop 1.5s ease-out;
+}
+
+.loving-message-alvin:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(255, 140, 0, 0.9);
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #e0f7fa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: #003366;
+  border: 2px solid #00bcd4;
+}
+
+.back-button:hover {
+  color: #ffffff;
+  background-color: #0077b6;
+  box-shadow: 0 0 10px #00e5ff;
+  text-shadow: 0 0 8px #00bcd4;
+}
+
+h1 {
+  font-size: 2.5rem;
+  animation: glow 3s ease-in-out infinite alternate, bounce 2s ease-in-out infinite;
+  text-shadow: 0 0 10px #00bcd4, 0 0 20px #0096c7;
+  color: #e0f7fa;
+}
+
+.loving-message {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  color: #e0f7fa;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  background: rgba(0, 105, 148, 0.25);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+  line-height: 1.8;
+  text-align: center;
+  text-shadow: 0 0 5px #00bcd4;
+  animation: fadeIn 2s ease forwards, pop 1.5s ease-out;
+}
+
+.loving-message:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.6);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0077b6;
+  }
+  to {
+    text-shadow: 0 0 20px #00e5ff, 0 0 30px #00bcd4;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes dynamicGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

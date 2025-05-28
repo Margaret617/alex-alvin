@@ -1,0 +1,31 @@
+.page-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #4b4b7d);
+  color: #f0e6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.page-image {
+  max-width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(123, 104, 238, 0.6);
+  margin-bottom: 2rem;
+}
+
+.page-message {
+  font-size: 1.8rem;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.5;
+  background: rgba(49, 39, 79, 0.8);
+  padding: 2rem 3rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(72, 60, 186, 0.4);
+  backdrop-filter: blur(6px);
+}

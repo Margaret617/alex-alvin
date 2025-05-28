@@ -1,38 +1,77 @@
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
 .App {
+  height: 100vh;
+}
+
+.split-screen {
+  display: flex;
+  height: 100%;
+}
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.left {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.right {
+  background: linear-gradient(to left, #1f4037, #99f2c8);
+}
+
+h1 {
+  font-size: 2.5rem;
   text-align: center;
+  text-shadow: 2px 2px 4px #00000088;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button, .back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button:hover, .back-button:hover {
+  background: lightgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  text-align: center;
   color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.anime-page {
+  background-image: url('https://i.imgur.com/FVjZcmE.jpg');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cars-page {
+  background-image: url('https://i.imgur.com/0gH6QAz.jpg');
 }
