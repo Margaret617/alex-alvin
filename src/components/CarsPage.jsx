@@ -2,7 +2,7 @@ import React from 'react';
 import './Page.css';
 
 const CarsPage = () => (
-  <div className="page cars fade-in">
+  <div className="page cars-page fade-in">
     <h1>🎂 Happy Birthday Alvin!</h1>
     <p className="loving-message">Yo Alvin, happy birthday king! 🏁🔥
 You’re the kind of guy Matt Armstrong would say is “built not bought.” The type to fix a flat and rebuild an engine all before breakfast. Life’s a highway, and you’re cruising in style — turbo heart, precision mind, zero cap.
