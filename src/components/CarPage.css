@@ -1,11 +1,11 @@
 .page.cars {
   padding: 2rem;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background-size: cover;
+  background-position: center;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 20px;
-  margin: 2rem auto;
-  max-width: 800px;
+  height: 100vh;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   animation: fadeIn 1s ease-in-out;
 }
