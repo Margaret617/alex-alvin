@@ -184,3 +184,20 @@ h1 {
     transform: scale(1);
   }
 }
+
+@media (max-width: 600px) {
+  .page {
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+  }
+  .loving-message, .loving-message-alvin {
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  .page-image {
+    max-width: 120px;
+    margin-bottom: 1.5rem;
+  }
+}
