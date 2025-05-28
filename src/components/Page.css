@@ -188,8 +188,9 @@ h1 {
 @media (max-width: 600px) {
   .page {
     height: auto;
+    min-height: 100vh;
     overflow: visible;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
   .loving-message, .loving-message-alvin {
     max-width: 100%;
